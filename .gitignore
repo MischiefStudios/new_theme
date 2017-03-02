@@ -1,4 +1,13 @@
-config/site.php
-files/cache/*
-files/tmp/*
-.htaccess
+# Ignore everything
+*
+concrete/themes/concrete
+concrete/themes/core
+concrete/themes/dashboard
+concrete/themes/elemental
+concrete/themes/greek_yogurt
+
+# Do not ingnore these files...
+!.gitignore
+
+# Do not ignore these subdirectories
+!concrete/themes/*
