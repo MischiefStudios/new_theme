@@ -1,8 +1,7 @@
 # Ignore everything
 *
 
-# Do not ingnore these files...
+# Do not ingnore these files/directories
 !.gitignore
-
-# Do not ignore these subdirectories
-!concrete/themes/*
+!concrete/themes/new_theme
+!concrete/themes/new_theme/*
