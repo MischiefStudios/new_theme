@@ -1,5 +1,5 @@
 # Ignore everything
-*
+/*
 
 # Do not ingnore these files/directories
 !.gitignore
