@@ -5,4 +5,4 @@
 !.gitignore
 
 # Do not ignore these subdirectories
-!concrete/themes/new_theme
+!concrete/themes/*
