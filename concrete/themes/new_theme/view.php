@@ -1,9 +1,8 @@
-<?php defined('C5_EXECUTE') or die(_("Access Denied.")); $this->inc('includes/top.php'); ?>
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-				<!--<div id="Main"><?php //print $innerContent; ?></div>-->
-				
-<body class="default" id="pageid<?php  print $c->getCollectionID(); ?>">
-<?php   $this->inc('includes/header.php'); ?>
+<!--<div id="Main"><?php //echo $innerContent; ?></div>-->
+
+<?php $this->inc('elements/header.php'); ?>
 
 			<section class="hero row">
 				<div class="col-12">
@@ -12,7 +11,13 @@
 			</section>
 			<section class="main row flex-container">
 				<div class="col-12">
-					<?php print $innerContent; ?>
+					<?php View::element('system_errors', [
+	                    'format' => 'block',
+	                    'error' => isset($error) ? $error : null,
+	                    'success' => isset($success) ? $success : null,
+	                    'message' => isset($message) ? $message : null,
+	                ]);
+	                echo $innerContent; ?>
 				</div>
 			</section>
 			<section class="support row">
@@ -21,4 +26,4 @@
 				</div>
 			</section>
 
-<?php  $this->inc('includes/footer.php'); ?>
+<?php $this->inc('elements/footer.php'); ?>
