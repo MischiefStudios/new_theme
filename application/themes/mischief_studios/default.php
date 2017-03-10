@@ -3,15 +3,15 @@
 <?php $this->inc('elements/header.php'); ?>
 
 <main>
-    <?php
-    $a = new Area('Main');
-    $a->enableGridContainer();
-    $a->display($c);
-
-    $a = new Area('Page Footer');
-    $a->enableGridContainer();
-    $a->display($c);
-    ?>
+   <section>
+   	video text callout<br><br>
+   </section>
+   <section>
+   	paralax<br><br>
+   </section>
+   <section>
+   	features<br><br>
+   </section>
 </main>
 
 <?php $this->inc('elements/footer.php'); ?>
