@@ -1,6 +1,6 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); 
 
-$this->inc('elements/top.php'); ?>
+$this->inc('elements/header_top.php'); ?>
 
 <?php $as = new GlobalArea('Header Search'); 
 $blocks = $as->getTotalBlocksInArea(); 

@@ -1,4 +1,4 @@
-<?php defined('C5_EXECUTE') or die("Access Denied.");
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
 
 			<footer class="footer row">
@@ -18,6 +18,6 @@
 		</div>
 
 	</div>
-<?php View::element('footer_required'); ?>
+	<?php View::element('footer_required'); ?>
 </body>
 </html>
