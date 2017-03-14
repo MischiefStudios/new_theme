@@ -9,7 +9,7 @@ $footerSocialBlocks = $footerSocial->getTotalBlocksInArea();
 $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || $c->isEditMode();
 ?>
 
-<footer id="footer-theme">
+<!-- <footer id="footer-theme">
     <?php
     if ($displayFirstSection) {
         ?>
@@ -73,7 +73,7 @@ $displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || 
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
 
 <?php $this->inc('elements/footer_bottom.php');?>
 

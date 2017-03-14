@@ -19,10 +19,11 @@
     </section>
 
     <?php
-    $a = new Area('Page Footer');
+    $a = new Area('Footer');
     $a->enableGridContainer();
     $a->display($c);
     ?>
+
 </main>
 
 <?php $this->inc('elements/footer.php'); ?>
