@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font: inherit;
+  position: relative;
+}
+
+header {
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  &#header-bar {
+    transition: all .4s ease;
+    z-index: 1000;
+  }
+
+  .header-brand {
+    margin-top: 18px;
+  }
+
+  &.scrolled {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  #header-site-title {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+    color: #fff;
+    text-transform: none;
+    line-height: 2.3em / 2;
+    font-size: 2.3em;
+    .transition(color 0.2s linear);
+
+    &:hover {
+      color: darken(#fff, 20%);
+      text-decoration: none !important;
+    }
+  }
+
+  .ccm-search-block-form {
+    position: relative;
+    &:before {
+      content: "\f002";
+      font-family: FontAwesome;
+      font-weight: normal;
+      font-style: normal;
+      display: inline-block;
+      position: absolute;
+      left: 14px;
+      top: 9px;
+      text-decoration: inherit;
+      color: #cbcbcb;
+    }
+    .ccm-search-block-text {
+      border: 1px solid #cbcbcb;
+      color: #cbcbcb;
+      border-radius: 30px;
+      padding: 10px 20px 10px 35px;
+      background-color: #ffffff;
+
+      &:focus {
+        outline: 0;
+      }
+    }
+  }
+
+  nav {
+
+    .dropdown{
+      &:after {
+        content: ' ▶';
+      }
+      &:hover {
+        &:after {
+          content:'\25bc';
+        }
+      }
+    }
+
+    ul {
+      margin: 0;
+      a {
+        padding: 0 20px;
+        font-family: 'Titillium Web';
+        font-size: 1.0em;
+        font-weight: 700;
+        color: #fff;
+        text-transform: none;
+        display: block;
+        line-height: 80px;
+
+        &:hover {
+          text-decoration: none;
+          height: 80px;
+          border-bottom: 2px solid red;
+        }
+      }
+      -webkit-font-smoothing:antialiased;
+      list-style: none;
+      padding: 0px 0px 0px 0px;
+      float: right;
+
+       li {
+        &:hover {
+          ul {
+            opacity: 1;
+            top: 30px;
+            visibility: visible;
+          }
+        }
+        margin: 0;
+        padding: 0;
+        position: relative;
+        display: inline-block;
+        ul {
+          li {
+            &:hover {
+              a {
+                color: #0099ff;
+              }
+            }
+            a {
+              line-height: 50px;
+              height: 50px;
+              &:hover {
+                color: #0099ff;
+                line-height: 50px;
+                height: 50px;
+              }
+              display: block;
+              padding-bottom: 15px;
+              font-size: 1.0em;
+              text-transform: none;
+              color: #a2a2a2;
+              .transition(all .25s ease);
+              font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+              font-weight: normal;
+            }
+            float: none;
+            width: 100%;
+            padding-bottom: 0px;
+          }
+          cursor: pointer;
+          padding: 15px;
+          padding-bottom: 0px;
+          float: left;
+          left: 0;
+          opacity: 0;
+          position: absolute;
+          top: 20px;
+          visibility: hidden;
+          width: 200px;
+          background-color: #fff;
+          z-index: 99;
+          .transition(all .25s ease);
+          .border-radius(3px);
+          border: 1px solid #edf2f3;
+        }
+      }
+    }
+  }
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(http://prolificinteractive.com/img/d-nav-bg.jpg);
+  transform: translateZ(0);
+  background-color: red;
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  color: #fff;
+  display: table;
+  position: relative;
+
+  video {
+    display: table-cell;
+    left: 0;
+    top: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+  }
+}
+
+.hero-content {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 2;
+  display: table-cell;
+  position: relative;
+
+  h2 {
+    font-size: 4em;
+    padding-bottom: 0;
+    color: #fff;
+    font-weight: 300;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.1;
+    position: static;
+    text-transform: none;
+    display: block;
+    height: auto;
+    vertical-align: middle;
+    top: 40%;
+    left: 0;
+    width: 100%;
+  }
+
+  .tagline {
+    font-size: 2.5em;
+    line-height: 54px;
+    color: white;
+    max-width: 1100px;
+    margin: 0 6%;
+    padding: 10px 110px;
+    position: static;
+    width: 100%;
+    font-weight: 200;
+    text-align: center;
+    text-transform: none;
+    top: 40%;
+    left: 0;
+  }
+}

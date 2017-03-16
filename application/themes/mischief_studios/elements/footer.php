@@ -1,79 +1,25 @@
-<?php defined('C5_EXECUTE') or die("Access Denied.");
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-$footerSiteTitle = new GlobalArea('Footer Site Title');
-$footerSiteTitleBlocks = $footerSiteTitle->getTotalBlocksInArea();
-
-$footerSocial = new GlobalArea('Footer Social');
-$footerSocialBlocks = $footerSocial->getTotalBlocksInArea();
-
-$displayFirstSection = $footerSiteTitleBlocks > 0 || $footerSocialBlocks > 0 || $c->isEditMode();
-?>
-
-<!-- <footer id="footer-theme">
-    <?php
-    if ($displayFirstSection) {
-        ?>
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-9">
-                        <?php
-                        $a = new GlobalArea('Footer Site Title');
-                        $a->display();
-                        ?>
-                    </div>
-                    <div class="col-sm-3">
-                        <?php
-                        $a = new GlobalArea('Footer Social');
-                        $a->display();
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <?php
-    }
-    ?>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <?php
-                    $a = new GlobalArea('Footer Legal');
-                    $a->display();
-                    ?>
-                </div>
-                <div class="col-sm-3">
-                    <?php
-                    $a = new GlobalArea('Footer Navigation');
-                    $a->display();
-                    ?>
-                </div>
-                <div class="col-sm-3">
-                    <?php
-                    $a = new GlobalArea('Footer Contact');
-                    $a->display();
-                    ?>
-                </div>
-            </div>
-        </div>
-    </section>
-</footer>
-
-<footer id="concrete5-brand">
+<footer>
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-                <span><?php echo t('Built with <a href="http://www.concrete5.org" class="concrete5" rel="nofollow">concrete5</a> CMS.') ?></span>
-                <span class="pull-right">
-                    <?php echo Core::make('helper/navigation')->getLogInOutLink() ?>
-                </span>
-                <span id="ccm-account-menu-container"></span>
+                <ul class="list-inline">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/Mischief-Studios-266425877120784/">
+                            <img src="<?php echo $view->getThemePath()?>/images/facebook-white-iso.png" alt="Visit Mischief Studios Facebook Page"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/Mischief-Studios">
+                            <img src="<?php echo $view->getThemePath()?>/images/linkedin-white-iso.png" alt="Visit Mischief Studios Linkedin Profile"/>
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
-</footer> -->
+</footer>
 
 <?php $this->inc('elements/footer_bottom.php');?>
 

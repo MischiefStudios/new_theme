@@ -1,0 +1,77 @@
+div.ccm-page {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: @line-height-base;
+  -webkit-font-smoothing:antialiased;
+
+  blockquote {
+    padding-left: 60px;
+    font-size: 1.46em;
+    font-weight: 300;
+    border-color: #bdcfd8;
+    color: #5b676c;
+    line-height: @line-height-base;
+  }
+
+  h1 {.make-heading(@h1-type-font-family, @h1-type-font-size, @h1-type-font-weight, @h1-type-color);}
+  h2 {.make-heading(@h2-type-font-family, @h2-type-font-size, @h2-type-font-weight, @h2-type-color);}
+  h3 {.make-heading(@h3-type-font-family, @h3-type-font-size, @h3-type-font-weight, @h3-type-color);}
+  h4 {.make-heading(@h4-type-font-family, @h4-type-font-size, @h4-type-font-weight, @h4-type-color);}
+  h5 {.make-heading(@h5-type-font-family, @h5-type-font-size, @h5-type-font-weight, @h5-type-color, @h5-type-text-transform);}
+  h6 {.make-heading(@h6-type-font-family, @h6-type-font-size, @h6-type-font-weight, @h6-type-color, @h6-type-text-transform);}
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  hr {
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-top: 1px solid #ececec;
+  }
+
+  main {
+    background-color: #fff;
+    padding-bottom: 80px;
+
+    /*
+    div.container:last-child {
+      padding-bottom: 80px;
+    }
+    */
+  }
+
+  main, footer {
+    a:not(.fa):not(.btn) {
+      color: #20bde8;
+
+      &:hover {
+        color: #abddff;
+        text-decoration: none;
+      }
+    }
+  }
+
+  div[data-container=block] {
+    div.container:last-child {
+      padding-bottom: 0px;
+    }
+  }
+
+  // Special styles for blog entry page type, making sure the sidebar contents get pushed down
+  &.page-type-blog-entry {
+    div.col-sidebar {
+      padding-top: 40px;
+    }
+  }
+
+  div.col-sidebar {
+    hr {
+      margin-top: @line-height-computed;
+      margin-bottom: @line-height-computed;
+    }
+  }
+
+}
