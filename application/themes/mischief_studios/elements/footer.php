@@ -2,8 +2,14 @@
 
 <footer>
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
+        <div class="row social">
+            <div class="col-sm-3">
+                <a href="tel:612.492.1804">612-492-1804</a>
+            </div>
+            <div class="col-sm-3">
+                <a href="mailto:contact@mischief-studios.com">contact@mischief-studios.com</a>
+            </div>
+            <div class="col-sm-3">
                 <ul class="list-inline">
                     <li>
                         <a target="_blank" href="https://www.facebook.com/Mischief-Studios-266425877120784/">
@@ -16,6 +22,8 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="col-sm-3">
             </div>
         </div>
     </div>

@@ -1,6 +1,30 @@
+button, .btn {
+  color: red;
+  border: 2px solid red;
+  padding: 0.5em 1.75em;
+  text-align: center;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+  .transition-animation(background, 0.3s, ease);
+  font-weight: 500;
+  .border-radius(3px);
+}
+
+button:hover, .btn:hover {
+  background-color: red;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+
 div.ccm-page {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
   font-size: 15px;
   line-height: @line-height-base;
   -webkit-font-smoothing:antialiased;
