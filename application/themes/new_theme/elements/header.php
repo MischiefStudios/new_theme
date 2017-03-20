@@ -2,13 +2,21 @@
 
 $this->inc('elements/header_top.php'); ?>
 
-<?php $as = new GlobalArea('Header Search'); 
-$blocks = $as->getTotalBlocksInArea(); 
-$displayThirdColumn = $blocks > 0 || $c->isEditMode(); ?>
-	
-			<div class="grid">
-				<header class="header row">
-					<div class="col-12">
-						<h1 class="text-thin"> <?php $a = new Area('Site Title'); $a->display($c); ?></h1>
-					</div>
-				</header>
+<header class="header-bar">
+	<div class="container">
+		<div class="row">
+			<div class="header-brand col-sm-4 col-xs-6">
+				<?php
+				$a = new GlobalArea('Header Site Title');
+				$a->display();
+				?>
+			</div>
+			<div class="header-nav <?php echo ($displayThirdColumn) ? 'col-sm-5 col-xs-6' : 'col-sm-8 col-xs-6' ?>">
+				<?php
+				$a = new GlobalArea('Header Navigation');
+				$a->display();
+				?>
+			</div>
+		</div>
+	</div>
+</header>
