@@ -1,101 +1,103 @@
-button, .btn {
-  color: red;
-  border: 2px solid red;
-  padding: 0.5em 1.75em;
-  text-align: center;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  .transition-animation(background, 0.3s, ease);
-  font-weight: 500;
-  .border-radius(3px);
-}
-
-button:hover, .btn:hover {
-  background-color: red;
-  color: white;
-}
-
-.text-center {
-  text-align: center;
-}
-
-
+// namespace header so as not to collide with the core app styles
 div.ccm-page {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: @line-height-base;
-  -webkit-font-smoothing:antialiased;
+  position: relative;
+  height: 100%;
 
-  blockquote {
-    padding-left: 60px;
-    font-size: 1.46em;
-    font-weight: 300;
-    border-color: #bdcfd8;
-    color: #5b676c;
-    line-height: @line-height-base;
-  }
+  header {
 
-  h1 {.make-heading(@h1-type-font-family, @h1-type-font-size, @h1-type-font-weight, @h1-type-color);}
-  h2 {.make-heading(@h2-type-font-family, @h2-type-font-size, @h2-type-font-weight, @h2-type-color);}
-  h3 {.make-heading(@h3-type-font-family, @h3-type-font-size, @h3-type-font-weight, @h3-type-color);}
-  h4 {.make-heading(@h4-type-font-family, @h4-type-font-size, @h4-type-font-weight, @h4-type-color);}
-  h5 {.make-heading(@h5-type-font-family, @h5-type-font-size, @h5-type-font-weight, @h5-type-color, @h5-type-text-transform);}
-  h6 {.make-heading(@h6-type-font-family, @h6-type-font-size, @h6-type-font-weight, @h6-type-color, @h6-type-text-transform);}
+    nav {
 
-  img {
-    max-width: 100%;
-    height: auto;
-  }
+      .dropdown{
+        &:after {
+          content: ' ▶';
+        }
+        &:hover {
+          &:after {
+            content:'\25bc';
+          }
+        }
+      }
 
-  hr {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    border-top: 1px solid #ececec;
-  }
+      ul {
+        margin: 0;
+        a {
+          padding: 0 20px;
+          font-size: 1.6em;
+          font-weight: 300;
+          color: #fff;
+          text-transform: none;
+          display: block;
+          line-height: 80px;
 
-  main {
-    background-color: #fff;
-    padding-bottom: 80px;
+          &:hover {
+            text-decoration: none;
+            height: 80px;
+            border-bottom: 2px solid @scheme-callout;
+          }
+        }
+        -webkit-font-smoothing:antialiased;
+        list-style: none;
+        padding: 0px 0px 0px 0px;
+        float: right;
 
-    /*
-    div.container:last-child {
-      padding-bottom: 80px;
-    }
-    */
-  }
-
-  main, footer {
-    a:not(.fa):not(.btn) {
-      color: #20bde8;
-
-      &:hover {
-        color: #abddff;
-        text-decoration: none;
+         li {
+          &:hover {
+            ul {
+              opacity: 1;
+              top: 30px;
+              visibility: visible;
+            }
+          }
+          margin: 0;
+          padding: 0;
+          position: relative;
+          display: inline-block;
+          ul {
+            li {
+              &:hover {
+                a {
+                  color: @scheme-highlight-shade;
+                }
+              }
+              a {
+                line-height: 50px;
+                height: 50px;
+                padding-bottom: 15px;
+                &:hover {
+                  color: @scheme-highlight-shade;
+                  line-height: 50px;
+                  height: 50px;
+                }
+                display: block;
+                padding-bottom: 15px;
+                font-size: 1.0em;
+                text-transform: none;
+                color: @scheme-highlight;
+                .transition(all .25s ease);
+                font-weight: 300;
+              }
+              float: none;
+              width: 100%;
+              padding-bottom: 0px;
+            }
+            cursor: pointer;
+            padding: 15px;
+            padding-bottom: 0px;
+            float: left;
+            left: 0;
+            opacity: 0;
+            position: absolute;
+            top: 20px;
+            visibility: hidden;
+            width: 200px;
+            background-color: #fff;
+            z-index: 99;
+            .transition(all .25s ease);
+            .border-radius(3px);
+            border: 1px solid @gray-lighter;
+          }
+        }
       }
     }
   }
-
-  div[data-container=block] {
-    div.container:last-child {
-      padding-bottom: 0px;
-    }
-  }
-
-  // Special styles for blog entry page type, making sure the sidebar contents get pushed down
-  &.page-type-blog-entry {
-    div.col-sidebar {
-      padding-top: 40px;
-    }
-  }
-
-  div.col-sidebar {
-    hr {
-      margin-top: @line-height-computed;
-      margin-bottom: @line-height-computed;
-    }
-  }
-
 }
