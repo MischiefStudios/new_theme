@@ -4,13 +4,12 @@
 
 
 <div class="hero">
-	<!-- <video src="http://prolificinteractive.com/img/ProlificWebHomepage.mp4" type="video/mp4" autoplay="" loop="true"></video> -->
+	<video src="<?php echo $view->getThemePath()?>/images/HomepageBanner.mp4" type="video/mp4" autoplay="" loop="true"></video>
 	<div class="hero-content">
 		<h2>Storytelling through website design and analysis.</h2>
-		<!-- <div class="tagline"></div> -->
 	</div>
 </div>
-<div class="services container" style="clear:both; margin-bottom: 300px;">
+<div class="services container">
 	<div class="row">
 		<div class="col-sm-12">
 			<h2 class="text-center">Services</h2>
