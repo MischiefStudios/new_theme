@@ -13,6 +13,9 @@
 @import ~"@{preset-fonts-file}";
 
 /* Our style rules */
-@import "build/content.less";
-@import "build/global.less";
-@import "build/mobile/navigation.less";
+@import "build/body.less";
+div.ccm-page {
+	@import "build/content.less";
+	@import "build/global.less";
+	@import "build/mobile/navigation.less";
+}
