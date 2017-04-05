@@ -7,4 +7,4 @@
     <p><?php echo t('You are not allowed to access this page.') ?></p>
 </main>
 
-<?php $this->inc('elements/footer.php'); ?>
+<?php $this->inc('elements/footer.php'); 

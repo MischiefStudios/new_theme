@@ -58,4 +58,4 @@
 	</div>
 </div> -->
 
-<?php $this->inc('elements/footer.php'); ?>
+<?php $this->inc('elements/footer.php');

@@ -20,4 +20,4 @@ $this->inc('elements/header.php'); ?>
 	</div>
 </main>
 
-<?php $this->inc('elements/footer.php'); ?>
+<?php $this->inc('elements/footer.php');
