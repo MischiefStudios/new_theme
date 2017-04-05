@@ -7,4 +7,4 @@
     <p><?php echo t('Page not found.') ?></p>
 </main>
 
-<?php $this->inc('elements/footer.php'); ?>
+<?php $this->inc('elements/footer.php'); 

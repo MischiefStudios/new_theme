@@ -1,10 +1,10 @@
-<?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
+	<!--<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">-->
 	<?php echo $html->css($view->getStylesheet('main.less')) ?>
 	<?php View::element('header_required', [
 		'pageTitle' => isset($pageTitle) ? $pageTitle : '',
