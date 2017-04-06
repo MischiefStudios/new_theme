@@ -13,6 +13,9 @@
 	]);?>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-	
+
 <body>
+
+<?php $this->inc('elements/analyticstracking.php'); ?>
+
 <div class="<?php echo $c->getPageWrapperClass()?>">
