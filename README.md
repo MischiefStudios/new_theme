@@ -1,4 +1,4 @@
-# new-theme
+# New Theme
 This repository is a starter for creating a new theme in Concrete5.
 
 # Directory Structure
