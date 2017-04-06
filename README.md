@@ -2,6 +2,7 @@
 This repository is a starter for creating a new theme in Concrete5.
 
 # Directory Structure
+```bash
 theme_name
 ├── css (theme styles)
 │   ├── build
@@ -55,3 +56,4 @@ theme_name
 ├── thumbnail.png (image that displays next to the theme in c5)
 ├── view.php (this empty view wraps around single pages and has header/footer)
 └── (add your own single page: https://documentation.concrete5.org/developers/working-with-pages/single-pages/overview)
+```
