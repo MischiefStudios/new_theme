@@ -2,6 +2,7 @@
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
+	<?php $this->inc('elements/tagmanager.php'); ?>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
