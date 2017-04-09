@@ -1,8 +1,11 @@
 <?php  defined('C5_EXECUTE') or die("Access Denied."); ?>
+
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage() ?>">
 <head>
-	<?php $this->inc('elements/tagmanager.php'); ?>
+
+	<?php $this->inc('elements/analytics_tags_testing.php'); ?>
+
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE-edge">
 	<link rel="stylesheet" href="<?php echo $view->getThemePath()?>/css/bootstrap-modified.css">
@@ -16,7 +19,5 @@
 </head>
 
 <body>
-
-<?php $this->inc('elements/analyticstracking.php'); ?>
 
 <div class="<?php echo $c->getPageWrapperClass()?>">
