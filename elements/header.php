@@ -11,7 +11,7 @@ $this->inc('elements/header_top.php'); ?>
 				$a->display();
 				?>
 			</div>
-			<div class="header-nav <?php echo ($displayThirdColumn) ? 'col-md-5 col-sm-7 col-xs-2' : 'col-md-5 col-sm-7 col-xs-2' ?>">
+			<div class="header-nav col-md-5 col-sm-7 col-xs-2">
 				<?php
 				$a = new GlobalArea('Header Navigation');
 				$a->display();
